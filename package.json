@@ -1,5 +1,8 @@
 {
   "name": "wokiee-react",
+  "engines": {
+    "node": "17.0.0"
+  },
   "version": "1.6.0",
   "private": true,
   "scripts": {
@@ -45,8 +48,5 @@
   "devDependencies": {
     "@svgr/webpack": "^6.2.1",
     "sass": "^1.52.1"
-  },
-  "engines": {
-    "node": "17.0.0"
   }
 }
