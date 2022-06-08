@@ -6,7 +6,7 @@
     "dev": "next dev",
     "start": "next start",
     "export": "next export",
-    "heroku-postbuild": "yarn run build"
+    "heroku-postbuild": "yarn build"
   },
   "dependencies": {
     "@apollo/client": "^3.6.5",
