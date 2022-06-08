@@ -10,7 +10,6 @@ import ProductDetails from "@components/product-details";
 import { HomePagesNavData as navContent } from "@data/navbar";
 import { ContentWrapperOne as ContentWrapper } from "@components/wrapper";
 
-
 const PageProductDetails = ({ product }) => {
   console.log(product);
   const { categories, excerpt, name, tags } = product;
@@ -22,7 +21,7 @@ const PageProductDetails = ({ product }) => {
     <Fragment>
       <Head>
         <title>
-          {name + " - Wokiee :: React Next JS Multipurpose eCommerce Template"}
+          {" - Wokiee :: React Next JS Multipurpose eCommerce Template"}
         </title>
         <meta name="description" content={excerpt} />
       </Head>
@@ -35,10 +34,10 @@ const PageProductDetails = ({ product }) => {
       />
       <ContentWrapper>
         <Breadcrumb />
-        
-          <ProductDetails product={product} />
-        
-        <SocialShare url={slug} content={name} />
+
+        <ProductDetails product={product} />
+
+        <SocialShare url={slug} content={"hardcode"} />
 
         <RelatedProducts categories={categories} tags={tags} />
       </ContentWrapper>
@@ -49,7 +48,7 @@ const PageProductDetails = ({ product }) => {
 
 export const getStaticProps = async ({ params }) => {
   const product = products.find(
-    (product) => product.name.toLowerCase().split(" ").join("-") === params.slug
+    (product) => "hardcode".toLowerCase().split(" ").join("-") === params.slug
   );
   return {
     props: {
@@ -63,7 +62,7 @@ export const getStaticPaths = async () => {
     paths: products.map((product) => {
       return {
         params: {
-          slug: product.name.toLowerCase().split(" ").join("-"),
+          slug: "hardcode".toLowerCase().split(" ").join("-"),
         },
       };
     }),
