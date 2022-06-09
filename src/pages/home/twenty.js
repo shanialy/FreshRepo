@@ -20,7 +20,7 @@ const HomeTwenty = () => {
   return (
     <Fragment>
       <Head>
-        <title>PriceSure</title>
+        <title>Price-sure</title>
       </Head>
 
       <Header logo={logo} navData={navContent} containerFluid={false} />
