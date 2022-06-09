@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 3000;
 export default withApollo(
   ({ initialState }) => {
     return new ApolloClient({
-      uri: `http://localhost:1000/api/graphql`,
+      uri: `http://localhost:3000/api/graphql`,
       cache: new InMemoryCache().restore(initialState || {}),
     });
   },
