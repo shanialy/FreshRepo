@@ -1,12 +1,12 @@
 {
   "name": "wokiee-react",
   "engines": {
-    "node": "17.0.0"
+    "node": "17.x"
   },
   "version": "1.6.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p $PORT",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "export": "next export",
