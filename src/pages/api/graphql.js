@@ -142,7 +142,7 @@ const startServer = server.start();
 export default async function handler(req, res) {
   await startServer;
   await server.createHandler({
-    path: "/api/graphql",
+    path: "http://localhost:1000/api/graphql",
   })(req, res);
 }
 
