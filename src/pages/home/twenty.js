@@ -20,7 +20,7 @@ const HomeTwenty = () => {
   return (
     <Fragment>
       <Head>
-        <title>Cognilium</title>
+        <title>Cogniliums</title>
       </Head>
 
       <Header logo={logo} navData={navContent} containerFluid={false} />
