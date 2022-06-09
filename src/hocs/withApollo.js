@@ -5,7 +5,7 @@ import { InMemoryCache, ApolloProvider, ApolloClient } from "@apollo/client";
 export default withApollo(
   ({ initialState }) => {
     return new ApolloClient({
-      uri: "http://localhost:3087/api/graphql",
+      uri: "http://localhost:$PORT/api/graphql",
       cache: new InMemoryCache().restore(initialState || {}),
     });
   },

@@ -6,7 +6,7 @@
   "version": "1.6.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 3087",
+    "dev": "next dev -p $PORT",
     "build": "next build",
     "start": "next start",
     "export": "next export",
